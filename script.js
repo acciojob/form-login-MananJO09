@@ -1,7 +1,10 @@
 // script.js
 function getFormvalue() {
-  var firstName = document.getElementById('fname').value;
-  var lastName = document.getElementById('lname').value;
-
-  alert('First Name: ' + firstName + '\nLast Name: ' + lastName);
+  let name = ""
+    for (var i=0;i<x.length;i++) {
+        if (x.elements[i].value!='Submit')
+            name += x.elements[i].value + " "
+    }
+ 
+    alert(name.substring(0,name.length-1));
 }
